@@ -72,24 +72,24 @@ const Hero = () => {
                     <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
                   </svg>
                 </a>
-                <a href="https://www.instagram.com/oshadha_k/" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full bg-[#1A1235] hover:bg-[#2A1B4A] flex items-center justify-center transition-all duration-300 hover:-translate-y-1 hover:scale-110">
+                <a href="https://www.instagram.com/oshadhaa_k?igsh=MXA0d2twaG82bXc2bQ==" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full bg-[#1A1235] hover:bg-[#2A1B4A] flex items-center justify-center transition-all duration-300 hover:-translate-y-1 hover:scale-110">
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-[#7F5FFF]">
                     <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
                     <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
                     <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
                   </svg>
                 </a>
-                <a href="https://www.facebook.com/oshadha.samarasinghe.7" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full bg-[#1A1235] hover:bg-[#2A1B4A] flex items-center justify-center transition-all duration-300 hover:-translate-y-1 hover:scale-110">
+                <a href="https://www.facebook.com/share/19haMW9Dr4/" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full bg-[#1A1235] hover:bg-[#2A1B4A] flex items-center justify-center transition-all duration-300 hover:-translate-y-1 hover:scale-110">
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" className="text-[#7F5FFF]">
                     <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
                   </svg>
                 </a>
-                <a href="https://x.com/oshadha_k" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full bg-[#1A1235] hover:bg-[#2A1B4A] flex items-center justify-center transition-all duration-300 hover:-translate-y-1 hover:scale-110">
+                <a href="https://x.com/oshadhaaa_k?t=rzR0sHJaBHRn2K90HfCIyQ&s=09" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full bg-[#1A1235] hover:bg-[#2A1B4A] flex items-center justify-center transition-all duration-300 hover:-translate-y-1 hover:scale-110">
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" className="text-[#7F5FFF]">
                     <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
                   </svg>
                 </a>
-                <a href="https://medium.com/@oshadha_k" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full bg-[#1A1235] hover:bg-[#2A1B4A] flex items-center justify-center transition-all duration-300 hover:-translate-y-1 hover:scale-110">
+                <a href="https://medium.com/@oshadakaveensamarasinghe" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full bg-[#1A1235] hover:bg-[#2A1B4A] flex items-center justify-center transition-all duration-300 hover:-translate-y-1 hover:scale-110">
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" className="text-[#7F5FFF]">
                     <path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/>
                   </svg>
