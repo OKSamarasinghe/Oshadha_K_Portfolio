@@ -101,7 +101,7 @@ const Hero = () => {
                 <div className="relative w-72 h-96 sm:w-80 sm:h-[28rem] bg-gradient-to-br from-[#1A1235] to-[#2A1B4A] rounded-3xl shadow-2xl shadow-[#7F5FFF]/20 overflow-hidden">
                   <div className="absolute inset-0 bg-gradient-to-br from-[#7F5FFF]/10 to-transparent opacity-60 z-10"></div>
                   <img 
-                    src="/Kk.JPG" 
+                    src="/osh.jpg" 
                     alt="Oshadha Samarasinghe" 
                     className="w-full h-full object-cover object-center rounded-3xl hover:scale-105 transition-transform duration-700"
                   />
