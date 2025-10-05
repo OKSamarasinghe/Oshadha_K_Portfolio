@@ -118,7 +118,7 @@ const Navbar = () => {
           </div>
           <div className="relative">
             <span className="text-xl font-bold bg-gradient-to-r from-white to-[#7F5FFF]/80 bg-clip-text text-transparent whitespace-nowrap">
-              Oshadha S.
+              Oshadha K.
             </span>
             <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-[#7F5FFF] to-[#925FFF] group-hover:w-full transition-all duration-300 rounded-full"></span>
           </div>
