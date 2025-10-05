@@ -3,49 +3,57 @@ import React from 'react';
 const Experience = () => {  const experiences = [
     {
       id: 1,
-      title: "Citi on the Mobile",
-      role: "UI/UX Designer",
-      duration: "2022 - Present",
-      description: "Led user research and design for mobile banking application used by millions of customers worldwide.",
-      icon: "A", 
-      bgColor: "#5D3FD3", // Purple background like in the image
+      title: "Seylan Bank PLC",
+      role: "Intern Software Engineer",
+      duration: "2025 - Present",
+      description: "Contributing to backend systems and internal web applications. Working with APIs, databases, and fintech platforms. Collaborating with senior engineers to optimize performance and reliability.",
+      icon: "S", 
+      bgColor: "#5D3FD3",
       iconColor: "#470FB3",
-    },
+    }
+  ];
+
+  const education = [
     {
-      id: 2,
-      title: "Citi on the Mobile",
-      role: "UI/UX Designer",
-      duration: "2021 - 2022",
-      description: "Designed mobile banking features focused on improving user engagement and accessibility.",
-      icon: "B", 
-      bgColor: "#FF6B6B", // Orange/pink background like in the image
+      id: 1,
+      title: "Coventry University",
+      role: "BSc (Hons) Computing – Computer Science",
+      duration: "Dec 2024 – Dec 2026",
+      description: "Currently in 3rd year, focusing on advanced software engineering concepts, algorithms, and system design.",
+      icon: "C", 
+      bgColor: "#FF6B6B",
       iconColor: "#E03E3E",
     },
     {
-      id: 3,
-      title: "Citi on the Mobile",
-      role: "UI/UX Designer",
-      duration: "2020 - 2021",
-      description: "Collaborated with development team to implement responsive design across banking platforms.",
-      icon: "C", 
-      bgColor: "#7572F4", // Purple/blue background like in the image
+      id: 2,
+      title: "NIBM",
+      role: "Higher National Diploma in Software Engineering",
+      duration: "2023 – 2024",
+      description: "Comprehensive curriculum covering software development lifecycle, project management, and enterprise applications.",
+      icon: "N", 
+      bgColor: "#7572F4",
       iconColor: "#4A47D9",
     },
     {
-      id: 4,
-      title: "Citi on the Mobile",
-      role: "Frontend Developer",
-      duration: "2019 - 2020",
-      description: "Developed user interfaces and implemented design systems for banking applications.",
-      icon: "D", 
-      bgColor: "#5C8AF0", // Blue background like in the image
+      id: 3,
+      title: "NIBM",
+      role: "Diploma in Software Engineering",
+      duration: "2022 – 2023",
+      description: "Foundation in programming fundamentals, database design, and web development technologies.",
+      icon: "N", 
+      bgColor: "#5C8AF0",
       iconColor: "#3260C7",
     },
   ];
 
-  return (    <div className="container mx-auto px-6 md:px-12 lg:px-16 xl:px-20 py-20">
-      <h2 className="text-3xl md:text-4xl font-bold mb-12">Work Experience</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+  return (
+    <div className="container mx-auto px-6 md:px-12 lg:px-16 xl:px-20 py-20">
+      <h2 className="text-3xl md:text-4xl font-bold mb-12">Experience & Education</h2>
+      
+      {/* Work Experience Section */}
+      <div className="mb-16">
+        <h3 className="text-2xl font-semibold mb-8 text-[#7F5FFF]">Professional Experience</h3>
+        <div className="grid grid-cols-1 gap-6">
         {experiences.map((exp) => (
           <div 
             key={exp.id}
@@ -69,24 +77,54 @@ const Experience = () => {  const experiences = [
                   <h3 className="text-lg font-semibold">{exp.title}</h3>
                   <div className="text-xs text-gray-400 mb-3">{exp.role} • {exp.duration}</div>
                   <p className="text-slate-300 text-sm">{exp.description}</p>
-                  
-                  <button 
-                    className="mt-3 text-xs py-1 px-3 rounded-full bg-[#2A1B4A] text-[#7F5FFF] hover:bg-[#7F5FFF]/20 transition duration-300"
-                  >
-                    Learn more
-                  </button>
                 </div>
               </div>
             </div>
           </div>
         ))}
+        </div>
+      </div>
+
+      {/* Education Section */}
+      <div className="mb-16">
+        <h3 className="text-2xl font-semibold mb-8 text-[#7F5FFF]">Education</h3>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {education.map((edu) => (
+          <div 
+            key={edu.id}
+            className="bg-[#1A1235] border border-[#2A1B4A] rounded-xl overflow-hidden hover:border-[#7F5FFF]/40 transition-all duration-300"
+          >
+            <div className="p-5">
+              <div className="flex items-start space-x-4">
+                <div 
+                  className="w-10 h-10 rounded-lg flex items-center justify-center text-xl font-bold flex-shrink-0"
+                  style={{ backgroundColor: edu.bgColor }}
+                >
+                  <div 
+                    className="w-6 h-6 rounded-md flex items-center justify-center text-white text-sm"
+                    style={{ backgroundColor: edu.iconColor }}
+                  >
+                    {edu.icon}
+                  </div>
+                </div>
+                
+                <div className="flex-1">
+                  <h3 className="text-lg font-semibold">{edu.title}</h3>
+                  <div className="text-xs text-gray-400 mb-3">{edu.role} • {edu.duration}</div>
+                  <p className="text-slate-300 text-sm">{edu.description}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+        </div>
       </div>
       
       <div className="mt-20 text-center">
         <p className="text-lg text-[#7F5FFF] mb-6">
-          I'm currently looking to join a <span className="font-medium">cross-functional</span> team
+          Passionate about creating <span className="font-medium">innovative software solutions</span>
         </p>
-        <p className="text-slate-300">that values improving people's lives through accessible design.</p>
+        <p className="text-slate-300">that bridge technology and user experience through clean, scalable code.</p>
           <div className="mt-16">
           <h3 className="text-lg font-medium mb-6">Tech Stack</h3>
           

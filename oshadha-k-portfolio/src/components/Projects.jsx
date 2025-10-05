@@ -1,13 +1,13 @@
 import React from 'react';
 
 const Projects = () => {
-  const projects = [
+  const featuredProjects = [
     {
       id: 1,
-      title: "Example Project",
-      description: "A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.",
+      title: "Purchasing Lanka International 🇱🇰",
+      description: "E-commerce platform with smooth animations, advanced UI/UX, and responsive design. Built with modern web technologies focusing on user experience and performance optimization.",
       image: "/project-placeholder.jpg",
-      tags: ["React", "Node.js"],
+      tags: ["Next.js", "Tailwind CSS", "React.js", "TypeScript", "Framer Motion"],
       links: {
         demo: "#",
         github: "#"
@@ -15,10 +15,54 @@ const Projects = () => {
     },
     {
       id: 2,
-      title: "Example Project",
-      description: "A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.",
+      title: "Task Management System",
+      description: "Secure task management app with authentication, role-based access control, and microservices architecture. Features JWT authentication, bcrypt encryption, and comprehensive security measures.",
       image: "/project-placeholder.jpg",
-      tags: ["React", "TailwindCSS"],
+      tags: ["React.js", "Spring Boot", "Microservices", "JWT", "SonarQube"],
+      links: {
+        demo: "#",
+        github: "#"
+      }
+    },
+    {
+      id: 3,
+      title: "FoodSnap",
+      description: "Mobile food ordering app with full CRUD operations and responsive UI. Built for Android with intuitive user interface and seamless ordering experience.",
+      image: "/project-placeholder.jpg",
+      tags: ["Java", "Android Studio", "SQLite", "XML"],
+      links: {
+        demo: "#",
+        github: "#"
+      }
+    },
+    {
+      id: 4,
+      title: "AGRIOS – Revolutionizing Agriculture with Technology",
+      description: "Smart agriculture platform connecting data-driven insights to improve efficiency. Combines IoT sensors, data analytics, and modern web technologies.",
+      image: "/project-placeholder.jpg",
+      tags: ["React.js", "Spring Boot", "MySQL"],
+      links: {
+        demo: "#",
+        github: "#"
+      }
+    },
+    {
+      id: 5,
+      title: "Credit Card Fraud Detection",
+      description: "Machine learning model predicting fraudulent transactions using data analytics. Implemented advanced algorithms for high-accuracy fraud detection.",
+      image: "/project-placeholder.jpg",
+      tags: ["Python", "Machine Learning", "Google Colab"],
+      links: {
+        demo: "#",
+        github: "#"
+      }
+    },
+    {
+      id: 6,
+      title: "SPECTRA SORTER – Autonomous Color Sorting Robot",
+      description: "Intelligent IoT-based color sorting robot. Selected for NIBM OBL Expo and Robotics Competition 2024. Features autonomous operation and advanced sensor integration.",
+      image: "/project-placeholder.jpg",
+      tags: ["C++", "Arduino", "IoT"],
       links: {
         demo: "#",
         github: "#"
@@ -26,11 +70,92 @@ const Projects = () => {
     }
   ];
 
+  const otherProjects = [
+    {
+      id: 7,
+      title: "Book Store Management System",
+      description: "Full-stack web application for managing book inventory and sales.",
+      tags: ["React.js", "Spring Boot", "Java", "MySQL"]
+    },
+    {
+      id: 8,
+      title: "Taste of Ceylon Restaurant Website",
+      description: "Modern restaurant website with online ordering capabilities.",
+      tags: ["HTML5", "CSS3", "JavaScript", "MySQL"]
+    },
+    {
+      id: 9,
+      title: "Oracle PL/SQL for Online Bookstore",
+      description: "Database-driven bookstore system with advanced PL/SQL procedures.",
+      tags: ["Oracle Database", "PL/SQL"]
+    },
+    {
+      id: 10,
+      title: "Data Preprocessing for Hotel Booking Analysis",
+      description: "Comprehensive data analysis and preprocessing for hotel booking patterns.",
+      tags: ["Python", "Weka", "Power BI"]
+    },
+    {
+      id: 11,
+      title: "Predicting Diabetes Risk with Regression Analysis",
+      description: "Statistical analysis and prediction model for diabetes risk assessment.",
+      tags: ["R Studio", "HTML", "Statistical Analysis"]
+    },
+    {
+      id: 12,
+      title: "Predictive Analysis of House Prices",
+      description: "Machine learning model for real estate price prediction.",
+      tags: ["R Studio", "HTML", "Regression Analysis"]
+    },
+    {
+      id: 13,
+      title: "Melody Box Music Player",
+      description: "Desktop music player application with data structures implementation.",
+      tags: ["C++", "Data Structures"]
+    },
+    {
+      id: 14,
+      title: "Book Heaven – Library Management System",
+      description: "Comprehensive library management system with reporting features.",
+      tags: ["Java", "jQuery", "MVC", "MySQL", "Jasper Reports"]
+    },
+    {
+      id: 15,
+      title: "University Student Management System",
+      description: "Desktop application for managing student records and academic information.",
+      tags: ["Java", "JFrame", "MySQL"]
+    },
+    {
+      id: 16,
+      title: "Restaurant Management System",
+      description: "Complete restaurant management solution with POS system.",
+      tags: ["C#", ".NET", "SQL Server"]
+    },
+    {
+      id: 17,
+      title: "FITNESS ARENA – Gym Management System",
+      description: "Gym management application with member tracking and billing.",
+      tags: ["C#", "MySQL"]
+    },
+    {
+      id: 18,
+      title: "Smart Parking System",
+      description: "IoT-based smart parking solution with sensor integration.",
+      tags: ["IoT", "Arduino"]
+    },
+    {
+      id: 19,
+      title: "Library Management UI/UX Prototype",
+      description: "User interface and experience design for library management system.",
+      tags: ["Figma", "UI/UX Design"]
+    }
+  ];
+
   return (
-    <div className="container mx-auto px-4 py-20">
+    <div className="container mx-auto px-6 md:px-12 lg:px-16 xl:px-20 py-20">
       <h2 className="text-3xl md:text-4xl font-bold mb-12">Projects</h2>
         <div className="space-y-32">
-        {projects.map((project, index) => (
+        {featuredProjects.map((project, index) => (
           <div 
             key={project.id}
             className={`flex flex-col ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} gap-8 md:gap-12`}
@@ -106,9 +231,9 @@ const Projects = () => {
         <h3 className="text-2xl font-bold mb-6">More Projects</h3>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {[1, 2, 3].map((item) => (
+          {otherProjects.map((project) => (
             <div 
-              key={item}
+              key={project.id}
               className="bg-[#1A1235] border border-[#2A1B4A] rounded-lg p-6 hover:border-[#7F5FFF]/40 transition-all duration-300"
             >
               <div className="flex justify-between items-start mb-6">
@@ -132,13 +257,13 @@ const Projects = () => {
                 </div>
               </div>
               
-              <h3 className="text-xl font-semibold mb-3">Authentication System</h3>
-              <p className="text-slate-300 mb-6">A secure user authentication system with JWT, password reset, email verification and OAuth options.</p>
+              <h3 className="text-xl font-semibold mb-3">{project.title}</h3>
+              <p className="text-slate-300 mb-6">{project.description}</p>
               
               <div className="flex flex-wrap gap-2">
-                <span className="text-xs px-2 py-1 bg-[#2A1B4A] text-slate-300 rounded">Node.js</span>
-                <span className="text-xs px-2 py-1 bg-[#2A1B4A] text-slate-300 rounded">Express</span>
-                <span className="text-xs px-2 py-1 bg-[#2A1B4A] text-slate-300 rounded">MongoDB</span>
+                {project.tags.map((tag, index) => (
+                  <span key={index} className="text-xs px-2 py-1 bg-[#2A1B4A] text-slate-300 rounded">{tag}</span>
+                ))}
               </div>
             </div>
           ))}

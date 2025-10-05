@@ -3,44 +3,26 @@ import React from 'react';
 const Certifications = () => {  const certifications = [
     {
       id: 1,
-      title: "UI/UX Design Certification",
-      provider: "Google",
-      date: "May 2023",
-      description: "Professional certification covering design principles, user research, wireframing, prototyping and usability testing.",
+      title: "Oracle Database Foundations Learner Certificate",
+      provider: "Oracle",
+      date: "2024",
+      description: "Comprehensive understanding of database fundamentals, SQL basics, and Oracle database architecture and management.",
       image: "/cert-placeholder.jpg",
-      color: "#4285F4"
+      color: "#F80000"
     },
     {
       id: 2,
-      title: "React Developer Certification",
-      provider: "Meta",
-      date: "January 2023",
-      description: "Advanced React concepts including Redux, Hooks, Context API and performance optimization techniques.",
+      title: "Oracle Database Design Learner Certificate",
+      provider: "Oracle",
+      date: "2024",
+      description: "Advanced database design concepts, normalization, entity-relationship modeling, and database optimization techniques.",
       image: "/cert-placeholder.jpg",
-      color: "#61DAFB"
-    },
-    {
-      id: 3,
-      title: "Frontend Web Development",
-      provider: "Udacity",
-      date: "September 2022",
-      description: "Comprehensive curriculum covering HTML, CSS, JavaScript, and modern web development practices.",
-      image: "/cert-placeholder.jpg",
-      color: "#7F5FFF"
-    },
-    {
-      id: 4,
-      title: "Agile Project Management",
-      provider: "Coursera",
-      date: "March 2022",
-      description: "Methodologies for managing software development projects using Agile frameworks and practices.",
-      image: "/cert-placeholder.jpg",
-      color: "#F05032"
+      color: "#F80000"
     }
   ];
 
   return (
-    <div className="container mx-auto px-4 py-20">
+    <div className="container mx-auto px-6 md:px-12 lg:px-16 xl:px-20 py-20">
       <h2 className="text-3xl md:text-4xl font-bold mb-12">Certifications</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {certifications.map((cert) => (
@@ -93,8 +75,35 @@ const Certifications = () => {  const certifications = [
         ))}
       </div>
       
+      {/* Organizations & Activities */}
+      <div className="mt-20">
+        <h3 className="text-2xl font-semibold mb-8 text-[#7F5FFF]">Organizations & Activities</h3>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="bg-[#1A1235] border border-[#2A1B4A] rounded-lg p-6">
+            <h4 className="text-lg font-semibold mb-3">AIESEC in NIBM</h4>
+            <p className="text-slate-400 text-sm mb-2">Member • 2023</p>
+            <p className="text-slate-300 text-sm">Active participation in global youth leadership programs and cultural exchange initiatives.</p>
+          </div>
+          <div className="bg-[#1A1235] border border-[#2A1B4A] rounded-lg p-6">
+            <h4 className="text-lg font-semibold mb-3">Rotaract Club in NIBM</h4>
+            <p className="text-slate-400 text-sm mb-2">Member • 2023</p>
+            <p className="text-slate-300 text-sm">Community service projects and leadership development through rotary initiatives.</p>
+          </div>
+          <div className="bg-[#1A1235] border border-[#2A1B4A] rounded-lg p-6">
+            <h4 className="text-lg font-semibold mb-3">Computer Society in NIBM</h4>
+            <p className="text-slate-400 text-sm mb-2">Member • 2024 – Present</p>
+            <p className="text-slate-300 text-sm">Active involvement in technical workshops and programming competitions.</p>
+          </div>
+          <div className="bg-[#1A1235] border border-[#2A1B4A] rounded-lg p-6">
+            <h4 className="text-lg font-semibold mb-3">NIBM Reach Talent Show</h4>
+            <p className="text-slate-400 text-sm mb-2">Selected Participant • 2023</p>
+            <p className="text-slate-300 text-sm">Showcased musical talents and creative skills in inter-university competition.</p>
+          </div>
+        </div>
+      </div>
+      
       <div className="mt-12 text-center">
-        <p className="text-slate-300">More certifications available upon request</p>
+        <p className="text-slate-300">Passionate about continuous learning and professional development</p>
       </div>
     </div>
   );
