@@ -46,7 +46,19 @@ body {
 
 /* Navbar spacing helper */
 .navbar-spacing {
-  padding-top: calc(72px + 1rem); /* Padding for fixed navbar: height (padding + content) + extra space */
+  padding-top: calc(60px + 1rem); /* Mobile navbar height */
+}
+
+@media (min-width: 640px) {
+  .navbar-spacing {
+    padding-top: calc(68px + 1rem); /* Tablet navbar height */
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-spacing {
+    padding-top: calc(72px + 1rem); /* Desktop navbar height */
+  }
 }
 
 /* Animations */
@@ -109,4 +121,34 @@ body {
 
 .animate-pulse {
   animation: pulse 2s infinite;
+}
+
+/* Mobile responsive utilities */
+@media (max-width: 640px) {
+  .mobile-padding {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+  
+  .mobile-text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+  
+  .mobile-spacing {
+    margin-bottom: 1rem;
+  }
+}
+
+/* Prevent horizontal scroll on mobile */
+body {
+  overflow-x: hidden;
+}
+
+/* Improve touch targets on mobile */
+@media (max-width: 768px) {
+  button, a {
+    min-height: 44px;
+    min-width: 44px;
+  }
 }

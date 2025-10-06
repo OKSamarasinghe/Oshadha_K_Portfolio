@@ -22,27 +22,28 @@ const Certifications = () => {  const certifications = [
   ];
 
   return (
-    <div className="container mx-auto px-6 md:px-12 lg:px-16 xl:px-20 py-20">
-      <h2 className="text-3xl md:text-4xl font-bold mb-12">Certifications</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <section id="certifications" className="bg-[#0c011a] text-white py-16 sm:py-20">
+    <div className="container mx-auto px-3 sm:px-4 md:px-6 lg:px-12 xl:px-16 py-4 sm:py-8 md:py-12">
+      <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-8 sm:mb-10 md:mb-12 text-center">Certifications</h2>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6">
         {certifications.map((cert) => (
           <div 
             key={cert.id}
             className="bg-[#1A1235] border border-[#2A1B4A] rounded-lg overflow-hidden hover:border-[#7F5FFF]/40 transition-all duration-300"
           >
             <div 
-              className="h-32 relative overflow-hidden flex items-center justify-center" 
+              className="h-24 sm:h-28 md:h-32 relative overflow-hidden flex items-center justify-center" 
               style={{
                 backgroundColor: `${cert.color}15`, // Very light version of the color
               }}
             >
               {/* Certificate icon or badge */}
               <div 
-                className="w-16 h-16 rounded-lg flex items-center justify-center"
+                className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-lg flex items-center justify-center"
                 style={{ backgroundColor: cert.color + '30' }} // Semi-transparent version of the color
               >
                 <div 
-                  className="w-10 h-10 rounded-md flex items-center justify-center text-white"
+                  className="w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10 rounded-md flex items-center justify-center text-white text-sm sm:text-base"
                   style={{ backgroundColor: cert.color }}
                 >
                   {cert.provider.charAt(0)}
@@ -102,10 +103,11 @@ const Certifications = () => {  const certifications = [
         </div>
       </div>
       
-      <div className="mt-12 text-center">
-        <p className="text-slate-300">Passionate about continuous learning and professional development</p>
+      <div className="mt-8 sm:mt-10 md:mt-12 text-center">
+        <p className="text-slate-300 text-sm sm:text-base">Passionate about continuous learning and professional development</p>
       </div>
     </div>
+    </section>
   );
 };
 

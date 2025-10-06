@@ -47,13 +47,14 @@ const Experience = () => {  const experiences = [
   ];
 
   return (
-    <div className="container mx-auto px-6 md:px-12 lg:px-16 xl:px-20 py-20">
-      <h2 className="text-3xl md:text-4xl font-bold mb-12">Experience & Education</h2>
+    <section id="experience" className="bg-[#0c011a] text-white py-16 sm:py-20">
+    <div className="container mx-auto px-3 sm:px-4 md:px-6 lg:px-12 xl:px-16 py-4 sm:py-8 md:py-12">
+      <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-8 sm:mb-10 md:mb-12 text-center">Experience & Education</h2>
       
       {/* Work Experience Section */}
-      <div className="mb-16">
-        <h3 className="text-2xl font-semibold mb-8 text-[#7F5FFF]">Professional Experience</h3>
-        <div className="grid grid-cols-1 gap-6">
+      <div className="mb-12 sm:mb-16">
+        <h3 className="text-xl sm:text-2xl font-semibold mb-6 sm:mb-8 text-[#7F5FFF]">Professional Experience</h3>
+        <div className="grid grid-cols-1 gap-4 sm:gap-6">
         {experiences.map((exp) => (
           <div 
             key={exp.id}
@@ -62,11 +63,11 @@ const Experience = () => {  const experiences = [
             <div className="p-5">
               <div className="flex items-start space-x-4">
                 <div 
-                  className="w-10 h-10 rounded-lg flex items-center justify-center text-xl font-bold flex-shrink-0"
+                  className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg flex items-center justify-center text-lg sm:text-xl font-bold flex-shrink-0"
                   style={{ backgroundColor: exp.bgColor }}
                 >
                   <div 
-                    className="w-6 h-6 rounded-md flex items-center justify-center text-white text-sm"
+                    className="w-5 h-5 sm:w-6 sm:h-6 rounded-md flex items-center justify-center text-white text-xs sm:text-sm"
                     style={{ backgroundColor: exp.iconColor }}
                   >
                     {exp.icon}
@@ -74,9 +75,9 @@ const Experience = () => {  const experiences = [
                 </div>
                 
                 <div className="flex-1">
-                  <h3 className="text-lg font-semibold">{exp.title}</h3>
-                  <div className="text-xs text-gray-400 mb-3">{exp.role} • {exp.duration}</div>
-                  <p className="text-slate-300 text-sm">{exp.description}</p>
+                  <h3 className="text-base sm:text-lg font-semibold">{exp.title}</h3>
+                  <div className="text-xs sm:text-sm text-gray-400 mb-2 sm:mb-3">{exp.role} • {exp.duration}</div>
+                  <p className="text-slate-300 text-xs sm:text-sm leading-relaxed">{exp.description}</p>
                 </div>
               </div>
             </div>
@@ -202,6 +203,7 @@ const Experience = () => {  const experiences = [
         </div>
       </div>
     </div>
+    </section>
   );
 };
 

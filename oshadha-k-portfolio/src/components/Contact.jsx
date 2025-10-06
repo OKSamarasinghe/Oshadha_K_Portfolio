@@ -1,8 +1,10 @@
 import React from 'react';
 
 const Contact = () => {
-  return (    <div className="container mx-auto px-6 md:px-12 lg:px-16 xl:px-20 py-20">
-      <h2 className="text-3xl md:text-4xl font-bold mb-12">Contact</h2>
+  return (
+    <section id="contact" className="bg-[#0c011a] text-white py-16 sm:py-20">
+    <div className="container mx-auto px-3 sm:px-4 md:px-6 lg:px-12 xl:px-16 py-4 sm:py-8 md:py-12">
+      <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-8 sm:mb-10 md:mb-12 text-center">Contact</h2>
       <div className="max-w-3xl mx-auto">
         <p className="text-center text-lg text-slate-300 mb-8">
           Let's build something <span className="text-[#7F5FFF] font-medium">impactful together</span> — feel free to reach out! Whether you have a project in mind or just want to connect, I'd love to hear from you.
@@ -20,8 +22,8 @@ const Contact = () => {
             </a>
           </div>
         </div>
-            <form className="space-y-6 bg-[#1A1235] border border-[#2A1B4A] rounded-xl p-6 md:p-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <form className="space-y-4 sm:space-y-6 bg-[#1A1235] border border-[#2A1B4A] rounded-xl p-4 sm:p-6 md:p-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
             <div>
               <label htmlFor="name" className="block mb-2 text-sm font-medium text-slate-300">
                 Your Name
@@ -29,7 +31,7 @@ const Contact = () => {
               <input
                 type="text"
                 id="name"
-                className="bg-[#0E0A1F] border border-[#2A1B4A] text-white text-sm rounded-lg focus:ring-[#7F5FFF] focus:border-[#7F5FFF] block w-full p-3"
+                className="bg-[#0E0A1F] border border-[#2A1B4A] text-white text-sm rounded-lg focus:ring-[#7F5FFF] focus:border-[#7F5FFF] block w-full p-2.5 sm:p-3"
                 placeholder="John Doe"
                 required
               />
@@ -41,7 +43,7 @@ const Contact = () => {
               <input
                 type="email"
                 id="email"
-                className="bg-[#0E0A1F] border border-[#2A1B4A] text-white text-sm rounded-lg focus:ring-[#7F5FFF] focus:border-[#7F5FFF] block w-full p-3"
+                className="bg-[#0E0A1F] border border-[#2A1B4A] text-white text-sm rounded-lg focus:ring-[#7F5FFF] focus:border-[#7F5FFF] block w-full p-2.5 sm:p-3"
                 placeholder="name@example.com"
                 required
               />
@@ -55,7 +57,7 @@ const Contact = () => {
             <input
               type="text"
               id="subject"
-              className="bg-[#0E0A1F] border border-[#2A1B4A] text-white text-sm rounded-lg focus:ring-[#7F5FFF] focus:border-[#7F5FFF] block w-full p-3"
+              className="bg-[#0E0A1F] border border-[#2A1B4A] text-white text-sm rounded-lg focus:ring-[#7F5FFF] focus:border-[#7F5FFF] block w-full p-2.5 sm:p-3"
               placeholder="Let me know how I can help you"
               required
             />
@@ -67,8 +69,8 @@ const Contact = () => {
             </label>
             <textarea
               id="message"
-              rows="6"
-              className="bg-[#0E0A1F] border border-[#2A1B4A] text-white text-sm rounded-lg focus:ring-[#7F5FFF] focus:border-[#7F5FFF] block w-full p-3"
+              rows="5"
+              className="bg-[#0E0A1F] border border-[#2A1B4A] text-white text-sm rounded-lg focus:ring-[#7F5FFF] focus:border-[#7F5FFF] block w-full p-2.5 sm:p-3 sm:rows-6"
               placeholder="Leave a message..."
             ></textarea>
           </div>
@@ -76,7 +78,7 @@ const Contact = () => {
           <div className="text-center">
             <button
               type="submit"
-              className="bg-gradient-to-r from-[#7F5FFF] to-[#925FFF] text-white font-medium rounded-lg text-sm px-8 py-3 hover:opacity-90 transition-all duration-300 hover:shadow-lg hover:shadow-[#7F5FFF]/20"
+              className="bg-gradient-to-r from-[#7F5FFF] to-[#925FFF] text-white font-medium rounded-lg text-sm px-6 py-2.5 sm:px-8 sm:py-3 hover:opacity-90 transition-all duration-300 hover:shadow-lg hover:shadow-[#7F5FFF]/20 w-full sm:w-auto"
             >
               Send Message
             </button>
@@ -117,6 +119,7 @@ const Contact = () => {
         </div>
       </div>
     </div>
+    </section>
   );
 };
 

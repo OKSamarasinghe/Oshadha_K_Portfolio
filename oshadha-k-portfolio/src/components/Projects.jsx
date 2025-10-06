@@ -152,20 +152,21 @@ const Projects = () => {
   ];
 
   return (
-    <div className="container mx-auto px-6 md:px-12 lg:px-16 xl:px-20 py-20">
-      <h2 className="text-3xl md:text-4xl font-bold mb-12">Projects</h2>
-        <div className="space-y-32">
+    <section id="projects" className="bg-[#0c011a] text-white py-16 sm:py-20">
+    <div className="container mx-auto px-3 sm:px-4 md:px-6 lg:px-12 xl:px-16 py-4 sm:py-8 md:py-12">
+      <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-8 sm:mb-10 md:mb-12 text-center">Projects</h2>
+        <div className="space-y-16 sm:space-y-20 md:space-y-24 lg:space-y-32">
         {featuredProjects.map((project, index) => (
           <div 
             key={project.id}
-            className={`flex flex-col ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} gap-8 md:gap-12`}
+            className={`flex flex-col ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-6 sm:gap-8 lg:gap-12`}
           >
-            <div className="w-full md:w-1/2">
-              <h3 className="text-sm text-slate-400 mb-2">Featured Project</h3>
-              <h4 className="text-2xl font-bold mb-4">{project.title}</h4>
+            <div className="w-full lg:w-1/2">
+              <h3 className="text-xs sm:text-sm text-slate-400 mb-1 sm:mb-2">Featured Project</h3>
+              <h4 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">{project.title}</h4>
               
-              <div className="bg-[#1A1235] border border-[#2A1B4A] rounded-lg p-6 mb-6">
-                <p className="text-slate-300">
+              <div className="bg-[#1A1235] border border-[#2A1B4A] rounded-lg p-4 sm:p-5 md:p-6 mb-4 sm:mb-6">
+                <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
                   {project.description}
                 </p>
               </div>
@@ -270,6 +271,7 @@ const Projects = () => {
         </div>
       </div>
     </div>
+    </section>
   );
 };
 
