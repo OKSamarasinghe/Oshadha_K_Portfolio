@@ -124,11 +124,15 @@ const Certifications = () => {
   ];
 
   const activityImages = [
-    { id: 1, src: "/carol.jpg", alt: "Carol Activity" },
-    { id: 2, src: "/obl32.jpg", alt: "OBL Activity 1" },
-    { id: 3, src: "/reach1.jpg", alt: "Reach Activity 1" },
-    { id: 4, src: "/reach2.jpg", alt: "Reach Activity 2" },
-    { id: 5, src: "/obl2.jpg", alt: "OBL Activity 2" }
+    { id: 1, src: "/A1.jpg" },
+    { id: 2, src: "/A2.jpg" },
+    { id: 3, src: "/A3.jpg" },
+    { id: 4, src: "/carol.jpg" },
+    { id: 5, src: "/obl32.jpg" },
+    { id: 6, src: "/A4.jpg" },
+    { id: 7, src: "/A6.jpg" },
+    { id: 8, src: "/reach1.jpg" },
+    { id: 9, src: "/reach2.jpg" }
   ];
 
   return (
@@ -251,7 +255,7 @@ const Certifications = () => {
                 <div className="aspect-video relative overflow-hidden">
                   <img 
                     src={image.src} 
-                    alt={image.alt}
+                    alt={`Activity ${image.id}`}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     onError={(e) => {
                       // Fallback to placeholder if image fails to load
@@ -268,9 +272,6 @@ const Certifications = () => {
                   </div>
                   {/* Overlay effect */}
                   <div className="absolute inset-0 bg-gradient-to-t from-[#7F5FFF]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                </div>
-                <div className="p-3 sm:p-4">
-                  <p className="text-slate-300 text-xs sm:text-sm font-medium">{image.alt}</p>
                 </div>
               </div>
             ))}
