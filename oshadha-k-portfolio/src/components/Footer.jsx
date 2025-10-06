@@ -67,7 +67,7 @@ const Footer = () => {
           </div>
           
           <div className="text-slate-500 text-sm">
-            <p>© {new Date().getFullYear()} Oshadha Samarasinghe. Designed & Developed with ❤️ using React and Tailwind CSS.</p>
+            <p>© {new Date().getFullYear()} Oshadha Samarasinghe.</p>
           </div>
         </div>
       </div>

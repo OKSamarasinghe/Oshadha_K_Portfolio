@@ -101,7 +101,7 @@ const Certifications = () => {
       duration: "2023",
       description: "Community service projects and leadership development through rotary initiatives.",
       logo: "/rotaract.png",
-      color: "#F7931E"
+      color: "#0F7CFF"
     },
     {
       id: 3,
