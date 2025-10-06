@@ -81,75 +81,6 @@ const Projects = () => {
     }
   ];
 
-  const otherProjects = [
-    {
-      id: 8,
-      title: "Task Management System",
-      description: "Secure task management app with authentication, role-based access control, and microservices architecture.",
-      tags: ["React.js", "Spring Boot", "Microservices", "JWT", "SonarQube"]
-    },
-    {
-      id: 9,
-      title: "Credit Card Fraud Detection",
-      description: "Machine learning model predicting fraudulent transactions using data analytics.",
-      tags: ["Python", "Machine Learning", "Google Colab"]
-    },
-    {
-      id: 10,
-      title: "Book Store Management System",
-      description: "Full-stack web application for managing book inventory and sales.",
-      tags: ["React.js", "Spring Boot", "Java", "MySQL"]
-    },
-    {
-      id: 11,
-      title: "Oracle PL/SQL for Online Bookstore",
-      description: "Database-driven bookstore system with advanced PL/SQL procedures.",
-      tags: ["Oracle Database", "PL/SQL"]
-    },
-    {
-      id: 12,
-      title: "Data Preprocessing for Hotel Booking Analysis",
-      description: "Comprehensive data analysis and preprocessing for hotel booking patterns.",
-      tags: ["Python", "Weka", "Power BI"]
-    },
-    {
-      id: 13,
-      title: "Predicting Diabetes Risk with Regression Analysis",
-      description: "Statistical analysis and prediction model for diabetes risk assessment.",
-      tags: ["R Studio", "HTML", "Statistical Analysis"]
-    },
-    {
-      id: 14,
-      title: "Predictive Analysis of House Prices",
-      description: "Machine learning model for real estate price prediction.",
-      tags: ["R Studio", "HTML", "Regression Analysis"]
-    },
-    {
-      id: 15,
-      title: "Melody Box Music Player",
-      description: "Desktop music player application with data structures implementation.",
-      tags: ["C++", "Data Structures"]
-    },
-    {
-      id: 16,
-      title: "Book Heaven – Library Management System",
-      description: "Comprehensive library management system with reporting features.",
-      tags: ["Java", "jQuery", "MVC", "MySQL", "Jasper Reports"]
-    },
-    {
-      id: 17,
-      title: "Restaurant Management System",
-      description: "Complete restaurant management solution with POS system.",
-      tags: ["C#", ".NET", "SQL Server"]
-    },
-    {
-      id: 18,
-      title: "Library Management UI/UX Prototype",
-      description: "User interface and experience design for library management system.",
-      tags: ["Figma", "UI/UX Design"]
-    }
-  ];
-
   return (
     <section id="projects" className="bg-[#0c011a] text-white py-16 sm:py-20">
       <div className="container mx-auto px-3 sm:px-4 md:px-6 lg:px-12 xl:px-16 py-4 sm:py-8 md:py-12">
@@ -229,49 +160,6 @@ const Projects = () => {
               </div>
             </div>
           ))}
-        </div>
-
-        <div className="mt-20 text-center">
-          <h3 className="text-2xl font-bold mb-6">More Projects</h3>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {otherProjects.map((project) => (
-              <div 
-                key={project.id}
-                className="bg-[#1A1235] border border-[#2A1B4A] rounded-lg p-6 hover:border-[#7F5FFF]/40 transition-all duration-300 hover:-translate-y-1"
-              >
-                <div className="flex justify-between items-start mb-6">
-                  <div className="w-10 h-10 rounded-full bg-[#2A1B4A] flex items-center justify-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-[#7F5FFF]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-                    </svg>
-                  </div>
-                  
-                  <div className="flex space-x-2">
-                    <a href="#" className="text-slate-400 hover:text-white transition duration-300">
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                      </svg>
-                    </a>
-                    <a href="#" className="text-slate-400 hover:text-white transition duration-300">
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4.07M3 15.364c.64-1.319 1-2.8 1-4.364 0-1.457.39-2.823 1.07-4" />
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-                
-                <h3 className="text-xl font-semibold mb-3">{project.title}</h3>
-                <p className="text-slate-300 mb-6">{project.description}</p>
-                
-                <div className="flex flex-wrap gap-2">
-                  {project.tags.map((tag, index) => (
-                    <span key={index} className="text-xs px-2 py-1 bg-[#2A1B4A] text-slate-300 rounded">{tag}</span>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
         </div>
       </div>
     </section>
