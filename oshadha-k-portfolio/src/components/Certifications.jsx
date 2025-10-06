@@ -84,6 +84,53 @@ const Certifications = () => {
     }
   ];
 
+  const organizations = [
+    {
+      id: 1,
+      name: "AIESEC in NIBM",
+      role: "Member",
+      duration: "2023",
+      description: "Active participation in global youth leadership programs and cultural exchange initiatives.",
+      logo: "/aiesec.png",
+      color: "#0F7CFF"
+    },
+    {
+      id: 2,
+      name: "Rotaract Club in NIBM",
+      role: "Member",
+      duration: "2023",
+      description: "Community service projects and leadership development through rotary initiatives.",
+      logo: "/rotaract.png",
+      color: "#F7931E"
+    },
+    {
+      id: 3,
+      name: "Computer Society in NIBM",
+      role: "Member",
+      duration: "2024 – Present",
+      description: "Active involvement in technical workshops and programming competitions.",
+      logo: "/nibm.png",
+      color: "#1E3A8A"
+    },
+    {
+      id: 4,
+      name: "IEEE Student Branch NIBM",
+      role: "Member",
+      duration: "2023 – Present",
+      description: "Professional development through IEEE networking and technical events.",
+      logo: "/iee.png",
+      color: "#00629B"
+    }
+  ];
+
+  const activityImages = [
+    { id: 1, src: "/carol.jpg", alt: "Carol Activity" },
+    { id: 2, src: "/obl32.jpg", alt: "OBL Activity 1" },
+    { id: 3, src: "/reach1.jpg", alt: "Reach Activity 1" },
+    { id: 4, src: "/reach2.jpg", alt: "Reach Activity 2" },
+    { id: 5, src: "/obl2.jpg", alt: "OBL Activity 2" }
+  ];
+
   return (
     <section id="certifications" className="bg-[#0c011a] text-white py-16 sm:py-20">
       <div className="container mx-auto px-3 sm:px-4 md:px-6 lg:px-12 xl:px-16 py-4 sm:py-8 md:py-12">
@@ -153,26 +200,80 @@ const Certifications = () => {
         <div className="mt-16 sm:mt-20">
           <h3 className="text-xl sm:text-2xl font-semibold mb-6 sm:mb-8 text-[#7F5FFF] text-center">Organizations & Activities</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
-            <div className="bg-[#1A1235] border border-[#2A1B4A] rounded-lg p-4 sm:p-6 hover:border-[#7F5FFF]/40 transition-all duration-300">
-              <h4 className="text-base sm:text-lg font-semibold mb-2 sm:mb-3">AIESEC in NIBM</h4>
-              <p className="text-slate-400 text-xs sm:text-sm mb-2">Member • 2023</p>
-              <p className="text-slate-300 text-xs sm:text-sm">Active participation in global youth leadership programs and cultural exchange initiatives.</p>
-            </div>
-            <div className="bg-[#1A1235] border border-[#2A1B4A] rounded-lg p-4 sm:p-6 hover:border-[#7F5FFF]/40 transition-all duration-300">
-              <h4 className="text-base sm:text-lg font-semibold mb-2 sm:mb-3">Rotaract Club in NIBM</h4>
-              <p className="text-slate-400 text-xs sm:text-sm mb-2">Member • 2023</p>
-              <p className="text-slate-300 text-xs sm:text-sm">Community service projects and leadership development through rotary initiatives.</p>
-            </div>
-            <div className="bg-[#1A1235] border border-[#2A1B4A] rounded-lg p-4 sm:p-6 hover:border-[#7F5FFF]/40 transition-all duration-300">
-              <h4 className="text-base sm:text-lg font-semibold mb-2 sm:mb-3">Computer Society in NIBM</h4>
-              <p className="text-slate-400 text-xs sm:text-sm mb-2">Member • 2024 – Present</p>
-              <p className="text-slate-300 text-xs sm:text-sm">Active involvement in technical workshops and programming competitions.</p>
-            </div>
-            <div className="bg-[#1A1235] border border-[#2A1B4A] rounded-lg p-4 sm:p-6 hover:border-[#7F5FFF]/40 transition-all duration-300">
-              <h4 className="text-base sm:text-lg font-semibold mb-2 sm:mb-3">IEEE Student Branch NIBM</h4>
-              <p className="text-slate-400 text-xs sm:text-sm mb-2">Member • 2023 – Present</p>
-              <p className="text-slate-300 text-xs sm:text-sm">Professional development through IEEE networking and technical events.</p>
-            </div>
+            {organizations.map((org) => (
+              <div key={org.id} className="bg-[#1A1235] border border-[#2A1B4A] rounded-lg overflow-hidden hover:border-[#7F5FFF]/40 transition-all duration-300 hover:-translate-y-1">
+                <div 
+                  className="h-16 sm:h-20 relative overflow-hidden flex items-center justify-center p-4" 
+                  style={{
+                    backgroundColor: `${org.color}10`, // Very light version of the color
+                  }}
+                >
+                  {/* Organization logo */}
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center">
+                    <img 
+                      src={org.logo} 
+                      alt={`${org.name} logo`}
+                      className="w-full h-full object-contain filter brightness-110"
+                      onError={(e) => {
+                        // Fallback to text if image fails to load
+                        e.target.style.display = 'none';
+                        e.target.nextSibling.style.display = 'flex';
+                      }}
+                    />
+                    <div 
+                      className="w-full h-full rounded-lg hidden items-center justify-center text-white text-sm font-bold"
+                      style={{ backgroundColor: org.color }}
+                    >
+                      {org.name.charAt(0)}
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="p-4 sm:p-6">
+                  <h4 className="text-base sm:text-lg font-semibold mb-2 sm:mb-3">{org.name}</h4>
+                  <p className="text-slate-400 text-xs sm:text-sm mb-2" style={{ color: org.color }}>{org.role} • {org.duration}</p>
+                  <p className="text-slate-300 text-xs sm:text-sm">{org.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Activity Images Gallery */}
+        <div className="mt-16 sm:mt-20">
+          <h3 className="text-xl sm:text-2xl font-semibold mb-6 sm:mb-8 text-[#7F5FFF] text-center">Activity Highlights</h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+            {activityImages.map((image) => (
+              <div 
+                key={image.id} 
+                className="bg-[#1A1235] border border-[#2A1B4A] rounded-lg overflow-hidden hover:border-[#7F5FFF]/40 transition-all duration-300 hover:-translate-y-1 group"
+              >
+                <div className="aspect-video relative overflow-hidden">
+                  <img 
+                    src={image.src} 
+                    alt={image.alt}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    onError={(e) => {
+                      // Fallback to placeholder if image fails to load
+                      e.target.style.display = 'none';
+                      e.target.nextSibling.style.display = 'flex';
+                    }}
+                  />
+                  <div className="w-full h-full bg-[#1A1235] hidden items-center justify-center relative">
+                    <div className="w-full h-full border-2 border-dashed border-gray-500/30 rounded flex items-center justify-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 text-gray-500/30" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                      </svg>
+                    </div>
+                  </div>
+                  {/* Overlay effect */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#7F5FFF]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+                <div className="p-3 sm:p-4">
+                  <p className="text-slate-300 text-xs sm:text-sm font-medium">{image.alt}</p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
         
