@@ -2,7 +2,7 @@ import React from 'react';
 
 const About = () => {
   return (
-    <section id="about" className="bg-[#0c011a] text-white py-16 sm:py-20">
+    <section id="about" className="bg-[#0c011a] text-white pt-16 sm:pt-20 pb-8 sm:pb-12">
       {/* STANDARDIZED CONTAINER - REMOVED max-w-6xl constraint */}
       <div className="container mx-auto px-3 sm:px-4 md:px-6 lg:px-12 xl:px-16 py-4 sm:py-8 md:py-12">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-8 sm:mb-10 md:mb-12 text-center">About Me</h2>
