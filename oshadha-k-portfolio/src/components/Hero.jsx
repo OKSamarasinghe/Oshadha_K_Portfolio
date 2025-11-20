@@ -17,7 +17,7 @@ const Hero = () => {
       <div className="absolute top-1/3 right-1/4 w-1.5 h-1.5 rounded-full bg-[#7F5FFF] opacity-30"></div>
       
       {/* Main Content - CENTERED CONTAINER WITH NAVBAR SPACING */}
-      <div className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-20 sm:pt-24 md:pt-28">
+      <div className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-20 sm:pt-24 md:pt-28 pb-8 sm:pb-12">
         <div className="max-w-7xl mx-auto w-full ml-4 sm:ml-6 lg:ml-31">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 xl:gap-20 items-center">
           
