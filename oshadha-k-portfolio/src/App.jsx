@@ -38,23 +38,23 @@ const App = () => {
           <Hero />
         </section>
         
-        <section id="about" className="py-12 sm:py-16 md:py-20">
+        <section id="about">
           <About />
         </section>
         
-        <section id="experience" className="py-12 sm:py-16 md:py-20">
+        <section id="experience">
           <Experience />
         </section>
         
-        <section id="projects" className="py-12 sm:py-16 md:py-20">
+        <section id="projects">
           <Projects />
         </section>
         
-        <section id="certifications" className="py-12 sm:py-16 md:py-20">
+        <section id="certifications">
           <Certifications />
         </section>
         
-        <section id="contact" className="py-12 sm:py-16 md:py-20">
+        <section id="contact">
           <Contact />
         </section>
         

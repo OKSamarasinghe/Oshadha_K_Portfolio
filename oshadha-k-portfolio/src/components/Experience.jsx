@@ -21,7 +21,7 @@ const Experience = () => {
       title: "Coventry University",
       role: "BSc (Hons) Computing – Computer Science",
       duration: "2024 – 2026",
-      description: "Currently in 3rd year, focusing on advanced software engineering concepts, algorithms, and system design.",
+      description: "Currently in 4th year, focusing on advanced software engineering concepts, algorithms, and system design.",
       icon: "C", 
       bgColor: "#FF6B6B",
       iconColor: "#E03E3E",
@@ -52,7 +52,7 @@ const Experience = () => {
   ];
 
   return (
-    <section className="bg-[#0c011a] text-white">
+    <section className="bg-[#0c011a] text-white py-6 sm:py-8 md:py-12">
       <div className="container mx-auto px-3 sm:px-4 md:px-6 lg:px-12 xl:px-16">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-8 sm:mb-10 md:mb-12 text-center">Experience & Education</h2>
         

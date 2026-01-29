@@ -2,14 +2,14 @@ import React from 'react';
 
 const About = () => {
   return (
-    <section className="bg-[#0c011a] text-white">
+    <section className="bg-[#0c011a] text-white py-6 sm:py-8 md:py-12">
       {/* STANDARDIZED CONTAINER - REMOVED max-w-6xl constraint */}
       <div className="container mx-auto px-3 sm:px-4 md:px-6 lg:px-12 xl:px-16">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-8 sm:mb-10 md:mb-12 text-center">About Me</h2>
         
         <div className="space-y-8 sm:space-y-10">
           <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
-            Passionate third-year Software Engineering undergraduate at Coventry University, with strong skills in problem-solving, 
+            Passionate fourth-year Software Engineering undergraduate at Coventry University, with strong skills in problem-solving, 
             logical thinking, and full-stack development. Currently interning as a Software Engineer at Seylan Bank PLC, 
             where I work on real-world fintech systems and backend integrations.
           </p>
