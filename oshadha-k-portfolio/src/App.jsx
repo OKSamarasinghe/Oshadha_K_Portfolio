@@ -34,27 +34,27 @@ const App = () => {
     <div className="bg-[#0E0A1F] text-white min-h-screen">
       <Navbar />
       <main>
-        <section id="home" className="min-h-screen pb-10">
+        <section id="home" className="min-h-screen">
           <Hero />
         </section>
         
-        <section id="about" className="min-h-screen pb-16">
+        <section id="about" className="py-12 sm:py-16 md:py-20">
           <About />
         </section>
         
-        <section id="experience" className="min-h-screen pb-16">
+        <section id="experience" className="py-12 sm:py-16 md:py-20">
           <Experience />
         </section>
         
-        <section id="projects" className="min-h-screen pb-16">
+        <section id="projects" className="py-12 sm:py-16 md:py-20">
           <Projects />
         </section>
         
-        <section id="certifications" className="min-h-screen navbar-spacing pb-16">
+        <section id="certifications" className="py-12 sm:py-16 md:py-20">
           <Certifications />
         </section>
         
-        <section id="contact" className="min-h-screen navbar-spacing pb-16">
+        <section id="contact" className="py-12 sm:py-16 md:py-20">
           <Contact />
         </section>
         

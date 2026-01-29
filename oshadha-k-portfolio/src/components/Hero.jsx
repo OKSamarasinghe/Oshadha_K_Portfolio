@@ -28,10 +28,10 @@ const Hero = () => {
               </p>
               
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-5xl font-bold leading-tight mb-4 sm:mb-6 animate-fadeIn" style={{ animationDelay: '300ms' }}>
-                Turning Ideas into<br />
-                Scalable and<br />
+                Crafting Innovative<br />
+                Solutions Through<br />
                 <span className="text-[#7F5FFF] relative inline-block">
-                  Beautiful Software
+                  Code & Design
                   <span className="absolute -bottom-1 left-0 w-full h-0.5 sm:h-1 bg-[#7F5FFF]/30 rounded-full"></span>
                 </span>
               </h1>

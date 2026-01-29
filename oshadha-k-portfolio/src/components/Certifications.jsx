@@ -136,8 +136,8 @@ const Certifications = () => {
   ];
 
   return (
-    <section id="certifications" className="bg-[#0c011a] text-white py-16 sm:py-20">
-      <div className="container mx-auto px-3 sm:px-4 md:px-6 lg:px-12 xl:px-16 py-4 sm:py-8 md:py-12">
+    <section className="bg-[#0c011a] text-white">
+      <div className="container mx-auto px-3 sm:px-4 md:px-6 lg:px-12 xl:px-16">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-8 sm:mb-10 md:mb-12 text-center">Certifications</h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
